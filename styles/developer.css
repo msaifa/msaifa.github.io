@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+figure.snip0069 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  text-align: center;
+}
+figure.snip0069 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip0069 > .image {
+  display: block;
+  position: relative;
+  padding: 15px 0;
+}
+figure.snip0069 > .image img {
+  width: 70%;
+  border-radius: 50%;
+}
+figure.snip0069 > .image:before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+figure.snip0069 figcaption {
+  position: relative;
+}
+figure.snip0069 figcaption:before {
+  position: absolute;
+  width: 100%;
+  background: #000000;
+  height: 0px;
+  bottom: 0;
+  display: block;
+  content: '';
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+figure.snip0069 h3,
+figure.snip0069 p {
+  margin: 0;
+  display: inline-block;
+  width: 90%;
+}
+figure.snip0069 h3 {
+  padding: 10px 15px;
+  background: #333333;
+  text-transform: uppercase;
+}
+figure.snip0069 p {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #4d4d4d;
+  padding: 20px 40px 30px;
+}
+figure.snip0069 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+figure.snip0069.blue h3,
+figure.snip0069.blue figcaption:before {
+}
+figure.snip0069.red h3,
+figure.snip0069.red figcaption:before {
+}
+figure.snip0069.yellow h3,
+figure.snip0069.yellow figcaption:before {
+}
+figure.snip0069.navy h3,
+figure.snip0069.navy figcaption:before {
+  background: #34495e;
+}
+figure.snip0069:hover figcaption:before,
+figure.snip0069.hover figcaption:before {
+  height: 10px;
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
