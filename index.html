@@ -34,7 +34,24 @@
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: #fff;
             padding: 40px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .header-info {
+            flex: 1;
+            text-align: left;
         }
 
         .header h1 {
@@ -53,7 +70,7 @@
 
         .contact-info {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 20px;
@@ -375,6 +392,17 @@
 
             .header {
                 padding: 30px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-info {
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
             }
 
             .header h1 {
@@ -389,6 +417,7 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
+                justify-content: center;
             }
 
             .contact-item::before {
@@ -427,13 +456,11 @@
             }
         }
 
-        @media print {
+            @media print {
             @page {
                 size: A4;
                 margin: 0;
-            }
-
-            body {
+            }            body {
                 background: #fff;
                 padding: 0;
                 margin: 0;
@@ -461,6 +488,19 @@
                 print-color-adjust: exact !important;
                 page-break-after: avoid;
                 padding: 25px 30px !important;
+                display: flex !important;
+                align-items: center !important;
+                gap: 20px !important;
+            }
+
+            .profile-photo {
+                width: 100px !important;
+                height: 100px !important;
+            }
+
+            .header-info {
+                flex: 1 !important;
+                text-align: left !important;
             }
 
             .header h1 {
@@ -684,17 +724,20 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>M Saif Alikhan</h1>
-            <div class="title">Full-Stack JavaScript Developer & System Analyst</div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <a href="mailto:msaifa.07@gmail.com">msaifa.07@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <a href="https://www.linkedin.com/in/msaifa/" target="_blank" rel="noopener noreferrer">linkedin.com/in/msaifa</a>
-                </div>
-                <div class="contact-item">
-                    Surabaya, Indonesia
+            <img src="https://firebasestorage.googleapis.com/v0/b/pojokaplikasi---a.appspot.com/o/1762751868431.jpeg?alt=media&token=bbd17763-a9a0-445b-8a2f-490d0c9ef5de" alt="M Saif Alikhan" class="profile-photo">
+            <div class="header-info">
+                <h1>M Saif Alikhan</h1>
+                <div class="title">Full-Stack JavaScript Developer & System Analyst</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="mailto:msaifa.07@gmail.com">msaifa.07@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/msaifa/" target="_blank" rel="noopener noreferrer">https://linkedin.com/in/msaifa</a>
+                    </div>
+                    <div class="contact-item">
+                        Surabaya, Indonesia
+                    </div>
                 </div>
             </div>
         </div>
@@ -808,8 +851,8 @@
                         </div>
                         <div class="responsibilities">
                             <ul>
-                                <li>Memimpin tim mobile developer (5 orang) dalam pengembangan aplikasi farmasi berskala nasional</li>
                                 <li>Membangun API dan sistem backend yang skalabel, kuat, dan dapat diandalkan untuk mendukung ribuan transaksi harian</li>
+                                <li>Mengoptimalkan infrastruktur AWS dan berhasil menghemat biaya server dari $100 per hari menjadi $8 per hari (penghematan 92%) melalui optimasi resource dan arsitektur sistem</li>
                                 <li>Mengelola infrastruktur IT System (Server, Database, Keamanan) dengan Ekosistem AWS untuk memastikan uptime 99.9%</li>
                                 <li>Mengidentifikasi dan merencanakan fitur baru berdasarkan kebutuhan bisnis dan feedback pengguna</li>
                                 <li>Memastikan tim selalu update dengan praktik terbaik coding aplikasi mobile dan teknologi terkini</li>
